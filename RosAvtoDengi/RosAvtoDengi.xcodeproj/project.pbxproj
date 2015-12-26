@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7745286A1C2E00D000209FE2 /* ServicesViewController.m */; };
+		7745286F1C2E03DA00209FE2 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7745286E1C2E03DA00209FE2 /* Button1.png */; };
+		774528721C2E04B700209FE2 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528701C2E04B700209FE2 /* button3.png */; };
+		774528731C2E04B700209FE2 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528711C2E04B700209FE2 /* button4.png */; };
+		774528791C2E077500209FE2 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774528781C2E077500209FE2 /* OnlineViewController.m */; };
+		7745287D1C2E0B1E00209FE2 /* FilialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */; };
+		7745287F1C2E0F6C00209FE2 /* mainImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7745287E1C2E0F6C00209FE2 /* mainImage.png */; };
+		774528811C2E10C900209FE2 /* callImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528801C2E10C900209FE2 /* callImage.png */; };
 		7794B94F1C2DEA6100531B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B94E1C2DEA6100531B50 /* main.m */; };
 		7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9511C2DEA6100531B50 /* AppDelegate.m */; };
 		7794B9551C2DEA6100531B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9541C2DEA6100531B50 /* ViewController.m */; };
@@ -35,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		774528691C2E00D000209FE2 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
+		7745286A1C2E00D000209FE2 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		7745286E1C2E03DA00209FE2 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
+		774528701C2E04B700209FE2 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		774528711C2E04B700209FE2 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		774528771C2E077500209FE2 /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
+		774528781C2E077500209FE2 /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
+		7745287B1C2E0B1E00209FE2 /* FilialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilialsViewController.h; sourceTree = "<group>"; };
+		7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilialsViewController.m; sourceTree = "<group>"; };
+		7745287E1C2E0F6C00209FE2 /* mainImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainImage.png; sourceTree = "<group>"; };
+		774528801C2E10C900209FE2 /* callImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callImage.png; sourceTree = "<group>"; };
 		7794B94A1C2DEA6100531B50 /* RosAvtoDengi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosAvtoDengi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794B94E1C2DEA6100531B50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7794B9501C2DEA6100531B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +97,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774528741C2E074000209FE2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				774528801C2E10C900209FE2 /* callImage.png */,
+				7745287E1C2E0F6C00209FE2 /* mainImage.png */,
+				774528701C2E04B700209FE2 /* button3.png */,
+				774528711C2E04B700209FE2 /* button4.png */,
+				7745286E1C2E03DA00209FE2 /* Button1.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		774528751C2E074D00209FE2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				774528691C2E00D000209FE2 /* ServicesViewController.h */,
+				7745286A1C2E00D000209FE2 /* ServicesViewController.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		774528761C2E075B00209FE2 /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				774528771C2E077500209FE2 /* OnlineViewController.h */,
+				774528781C2E077500209FE2 /* OnlineViewController.m */,
+			);
+			name = Online;
+			sourceTree = "<group>";
+		};
+		7745287A1C2E0B0700209FE2 /* Filials */ = {
+			isa = PBXGroup;
+			children = (
+				7745287B1C2E0B1E00209FE2 /* FilialsViewController.h */,
+				7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */,
+			);
+			name = Filials;
+			sourceTree = "<group>";
+		};
 		7794B9411C2DEA6100531B50 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +159,10 @@
 		7794B94C1C2DEA6100531B50 /* RosAvtoDengi */ = {
 			isa = PBXGroup;
 			children = (
+				7745287A1C2E0B0700209FE2 /* Filials */,
+				774528761C2E075B00209FE2 /* Online */,
+				774528751C2E074D00209FE2 /* Services */,
+				774528741C2E074000209FE2 /* Image */,
 				7794B9501C2DEA6100531B50 /* AppDelegate.h */,
 				7794B9511C2DEA6100531B50 /* AppDelegate.m */,
 				7794B9531C2DEA6100531B50 /* ViewController.h */,
@@ -248,7 +310,12 @@
 			files = (
 				7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */,
 				7794B95A1C2DEA6100531B50 /* Assets.xcassets in Resources */,
+				7745287F1C2E0F6C00209FE2 /* mainImage.png in Resources */,
 				7794B9581C2DEA6100531B50 /* Main.storyboard in Resources */,
+				7745286F1C2E03DA00209FE2 /* Button1.png in Resources */,
+				774528731C2E04B700209FE2 /* button4.png in Resources */,
+				774528721C2E04B700209FE2 /* button3.png in Resources */,
+				774528811C2E10C900209FE2 /* callImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7794B9551C2DEA6100531B50 /* ViewController.m in Sources */,
+				7745287D1C2E0B1E00209FE2 /* FilialsViewController.m in Sources */,
 				7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */,
+				7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */,
 				7794B94F1C2DEA6100531B50 /* main.m in Sources */,
+				774528791C2E077500209FE2 /* OnlineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +573,7 @@
 				7794B9791C2DEA6100531B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7794B97A1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +582,7 @@
 				7794B97C1C2DEA6100531B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7794B97D1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +591,7 @@
 				7794B97F1C2DEA6100531B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
