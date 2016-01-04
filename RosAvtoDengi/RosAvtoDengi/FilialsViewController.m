@@ -123,25 +123,25 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    if (row == 0) {
-//        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(-33.868, 151.208)];
-    }
-    else if (row == 1) {
-        
-//        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381)];
-    }
-    else if (row == 2) {
-
-    }
-    else if (row == 3) {
-
-    }
-    else
-    {
-        
-    }
-
-}
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+//{
+//    if (row == 0) {
+////        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(-33.868, 151.208)];
+//    }
+//    else if (row == 1) {
+//        
+////        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381)];
+//    }
+//    else if (row == 2) {
+//
+//    }
+//    else if (row == 3) {
+//
+//    }
+//    else
+//    {
+//        
+//    }
+//
+//}
 @end
