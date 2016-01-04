@@ -8,12 +8,12 @@
 
 #import "FilialsViewController.h"
 
-@interface FilialsViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface FilialsViewController () <UIPickerViewDataSource, UIPickerViewDelegate, GMSMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *mainPickerView;
 @property (strong, nonatomic) NSArray *testArray;
-//@property (strong, nonatomic) GMSMapView * mainMap;
+@property (strong, nonatomic) GMSMapView * mainMap;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 
@@ -25,22 +25,22 @@
     [super viewDidLoad];
     
     self.mainView.layer.cornerRadius = 3.f;
-//    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.610426230566794
-//                                                            longitude:39.73967581987381
-//                                                                 zoom:15];
-//    self.mainMap = [GMSMapView mapWithFrame:self.mainView.bounds camera:camera];
-//    self.mainMap.myLocationEnabled = YES;
-//    self.mainMap.settings.rotateGestures = NO;
-//    self.mainMap.settings.allowScrollGesturesDuringRotateOrZoom = YES;
-//    self.mainMap.delegate = self;
-//    [self.mainView addSubview:self.mainMap];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.610426230566794
+                                                            longitude:39.73967581987381
+                                                                 zoom:15];
+    self.mainMap = [GMSMapView mapWithFrame:self.mainView.bounds camera:camera];
+    self.mainMap.myLocationEnabled = YES;
+    self.mainMap.settings.rotateGestures = NO;
+    self.mainMap.settings.allowScrollGesturesDuringRotateOrZoom = YES;
+    self.mainMap.delegate = self;
+    [self.mainView addSubview:self.mainMap];
     
-//    // Creates a marker in the center of the map.
-//    GMSMarker *marker = [[GMSMarker alloc] init];
-//    marker.position = CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381);
-//    marker.title = @"Сочи";
-//    marker.snippet = @"Макаренко 8/4";
-//    marker.map = self.mainMap;
+    // Creates a marker in the center of the map.
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381);
+    marker.title = @"Сочи";
+    marker.snippet = @"Макаренко 8/4";
+    marker.map = self.mainMap;
     
     self.testArray = [NSArray arrayWithObjects:
                       @"Ставрополь",
@@ -49,12 +49,12 @@
                       @"Краснодар",  nil];
     
     
-//    [self.backButton addTarget:self action:@selector(backButtonAction)
-//              forControlEvents:UIControlEventTouchUpInside];
-//    [self.callButton addTarget:self action:@selector(callButtonAction)
-//              forControlEvents:UIControlEventTouchUpInside];
+    [self.backButton addTarget:self action:@selector(backButtonAction)
+              forControlEvents:UIControlEventTouchUpInside];
+    [self.callButton addTarget:self action:@selector(callButtonAction)
+              forControlEvents:UIControlEventTouchUpInside];
     
-//    self.mainPickerView.frame = CGRectMake(130, 50, 130, 45);
+    self.mainPickerView.frame = CGRectMake(130, 50, 130, 45);
     [self.mainPickerView selectRow:self.testArray.count - 1 inComponent:0 animated:YES];
 
 }
@@ -74,17 +74,17 @@
     NSLog(@"Дзынь Дзынь филиалы");
 }
 
-//- (void) buttonZoomInAction
-//{
-//    GMSCameraUpdate *zoomCamera = [GMSCameraUpdate zoomBy:1];
-//    [self.mainMap animateWithCameraUpdate:zoomCamera];
-//}
-//
-//- (void) buttonZoomOutAction
-//{
-//    GMSCameraUpdate *zoomCamera = [GMSCameraUpdate zoomBy:-1];
-//    [self.mainMap animateWithCameraUpdate:zoomCamera];
-//}
+- (void) buttonZoomInAction
+{
+    GMSCameraUpdate *zoomCamera = [GMSCameraUpdate zoomBy:1];
+    [self.mainMap animateWithCameraUpdate:zoomCamera];
+}
+
+- (void) buttonZoomOutAction
+{
+    GMSCameraUpdate *zoomCamera = [GMSCameraUpdate zoomBy:-1];
+    [self.mainMap animateWithCameraUpdate:zoomCamera];
+}
 
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView
@@ -123,25 +123,25 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-//{
-//    if (row == 0) {
-////        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(-33.868, 151.208)];
-//    }
-//    else if (row == 1) {
-//        
-////        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381)];
-//    }
-//    else if (row == 2) {
-//
-//    }
-//    else if (row == 3) {
-//
-//    }
-//    else
-//    {
-//        
-//    }
-//
-//}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if (row == 0) {
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(-33.868, 151.208)];
+    }
+    else if (row == 1) {
+        
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381)];
+    }
+    else if (row == 2) {
+
+    }
+    else if (row == 3) {
+
+    }
+    else
+    {
+        
+    }
+
+}
 @end
