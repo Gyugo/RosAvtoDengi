@@ -7,7 +7,7 @@ target 'RosAvtoDengi' do
 
 pod 'DWBubbleMenuButton', '~> 1.0.1'
 pod "AKPickerView"
-
+pod 'GoogleMaps'
 
 end
 

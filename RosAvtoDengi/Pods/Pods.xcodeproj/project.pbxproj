@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0A85B48EBC384295520CB64AE9A4A1D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		5023B7166A92056085D883175C44BBE2 /* DWBubbleMenuButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC60B52F6C8966D00AA48D7BFF945D /* DWBubbleMenuButton-dummy.m */; };
-		55F3DB9475AE5EB76621B6CA8F7F0A06 /* AKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3907D39435DC88D8A1F503097CDD0A /* AKPickerView.m */; };
-		5E3455A9D17138FB8DE19A599D5200F5 /* AKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A881661C9077ED31EF4046945FECBAF7 /* AKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5023B7166A92056085D883175C44BBE2 /* DWBubbleMenuButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */; };
+		55F3DB9475AE5EB76621B6CA8F7F0A06 /* AKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */; };
+		5E3455A9D17138FB8DE19A599D5200F5 /* AKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		638756EBDD61F70EBB5CF176BFF2A6FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		69020BA38D2C0DEEC6BAAEAB6CEE6171 /* AKPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7526FC95498A5A5AA318FD6A90B4299C /* AKPickerView-dummy.m */; };
-		A16446A1D2CCEA7055C5135C5984D90D /* DWBubbleMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 883356E592046F380F6B7E92F242319B /* DWBubbleMenuButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A23781B3C04FA8C61424E6FC7F270CD0 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D40D4B0C5462BB39ABE79FA8ABDB504B /* DWBubbleMenuButton.m */; };
+		69020BA38D2C0DEEC6BAAEAB6CEE6171 /* AKPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */; };
+		A16446A1D2CCEA7055C5135C5984D90D /* DWBubbleMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A23781B3C04FA8C61424E6FC7F270CD0 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */; };
 		A76976B560F40CAD69B075F7F714AAA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		F068257C05873FEB56B65FF4DF0B8D4A /* Pods-RosAvtoDengi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697A91133CACB127BD5CBF690E9C18C /* Pods-RosAvtoDengi-dummy.m */; };
 		F39E4F528DEBEDDDF7AA04C615A2F3DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
@@ -38,29 +38,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		067929C1801FE50E1FE6C1A530F35989 /* AKPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKPickerView.xcconfig; sourceTree = "<group>"; };
-		09A9821A5CD9DB6B9CA7831F1309564D /* DWBubbleMenuButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWBubbleMenuButton.xcconfig; sourceTree = "<group>"; };
-		0C3907D39435DC88D8A1F503097CDD0A /* AKPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKPickerView.m; path = AKPickerViewSample/AKPickerView/AKPickerView.m; sourceTree = "<group>"; };
-		21EC60B52F6C8966D00AA48D7BFF945D /* DWBubbleMenuButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWBubbleMenuButton-dummy.m"; sourceTree = "<group>"; };
+		239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPickerView.h; path = AKPickerViewSample/AKPickerView/AKPickerView.h; sourceTree = "<group>"; };
+		23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKPickerView.m; path = AKPickerViewSample/AKPickerView/AKPickerView.m; sourceTree = "<group>"; };
 		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		270F8C540C34F5A7EE261551B6655C3E /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
 		28DA16CE88C99937EDB07D3FD4B0243F /* Pods-RosAvtoDengi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RosAvtoDengi-frameworks.sh"; sourceTree = "<group>"; };
 		2D2651C75A664EE1E1678667EF21E1B3 /* Pods-RosAvtoDengi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RosAvtoDengi-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E02D2C91382914B1F07D60EB1239DF9 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		346A11A471B2108A3BC748BF5CAD3B09 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		3697A91133CACB127BD5CBF690E9C18C /* Pods-RosAvtoDengi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RosAvtoDengi-dummy.m"; sourceTree = "<group>"; };
 		486185D238539826A277877122B41397 /* Pods-RosAvtoDengi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RosAvtoDengi-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4CCE99FCB68F875EC4E124CF655AD69B /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
-		7526FC95498A5A5AA318FD6A90B4299C /* AKPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKPickerView-dummy.m"; sourceTree = "<group>"; };
-		78D36F354AA9B1BEB71D17AE0FD8162A /* DWBubbleMenuButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWBubbleMenuButton-prefix.pch"; sourceTree = "<group>"; };
+		54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKPickerView.xcconfig; sourceTree = "<group>"; };
 		7CD56F0F3B8BCCD8E6914A9C2A7DD230 /* libDWBubbleMenuButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDWBubbleMenuButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		883356E592046F380F6B7E92F242319B /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWBubbleMenuButton.h; path = Source/DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWBubbleMenuButton.xcconfig; sourceTree = "<group>"; };
+		8A57D320DBE67D1B2EE93A3BD99BE0E1 /* AKPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKPickerView-prefix.pch"; sourceTree = "<group>"; };
 		90ADE77FE99C75FE88CE2214547E134C /* libAKPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAKPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9831F8F181A9319BC28D3F57CD97215E /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A881661C9077ED31EF4046945FECBAF7 /* AKPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPickerView.h; path = AKPickerViewSample/AKPickerView/AKPickerView.h; sourceTree = "<group>"; };
+		9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKPickerView-dummy.m"; sourceTree = "<group>"; };
+		9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWBubbleMenuButton.m; path = Source/DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		B165DBF6DA28F06B102BE6EC6029942D /* DWBubbleMenuButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWBubbleMenuButton-prefix.pch"; sourceTree = "<group>"; };
 		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C28D532578B67D57583E6F50DF84FE46 /* Pods-RosAvtoDengi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RosAvtoDengi-resources.sh"; sourceTree = "<group>"; };
-		D3205033DCFEB3C5872F0991A7B65935 /* AKPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKPickerView-prefix.pch"; sourceTree = "<group>"; };
-		D40D4B0C5462BB39ABE79FA8ABDB504B /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWBubbleMenuButton.m; path = Source/DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWBubbleMenuButton.h; path = Source/DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWBubbleMenuButton-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		1736F3F438E0FCCDC9A78A1E5B03ECD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346A11A471B2108A3BC748BF5CAD3B09 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D0B44E513E5656E98CA215AA6B75B84 /* DWBubbleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */,
+				9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */,
+				2F63809D5B18AA489F42E5D626DF4641 /* Support Files */,
+			);
+			path = DWBubbleMenuButton;
+			sourceTree = "<group>";
+		};
+		1F9136F69F4AAE070075F165BA7A44E9 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1736F3F438E0FCCDC9A78A1E5B03ECD9 /* Frameworks */,
+				8C008B1EE1A227BC7EF9C530546192B9 /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		2F63809D5B18AA489F42E5D626DF4641 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */,
+				F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */,
+				B165DBF6DA28F06B102BE6EC6029942D /* DWBubbleMenuButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DWBubbleMenuButton";
+			sourceTree = "<group>";
+		};
 		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,16 +164,6 @@
 			path = "Target Support Files/Pods-RosAvtoDengi";
 			sourceTree = "<group>";
 		};
-		4007E2EFB15340E1B57EDE7B94094B35 /* DWBubbleMenuButton */ = {
-			isa = PBXGroup;
-			children = (
-				883356E592046F380F6B7E92F242319B /* DWBubbleMenuButton.h */,
-				D40D4B0C5462BB39ABE79FA8ABDB504B /* DWBubbleMenuButton.m */,
-				7E09D05B12668C859A450105075ABA79 /* Support Files */,
-			);
-			path = DWBubbleMenuButton;
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,56 +172,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		56B0FB7D1C61B76592C8A8B35BB8D86F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				C10B100199335C57D2C70D82431D89DF /* Pods */,
-				C3B2C72B6DF045F1225A6008F08216F5 /* Products */,
-				091672ECC89FFC3BA2B04BADBFA90B77 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		7E09D05B12668C859A450105075ABA79 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				09A9821A5CD9DB6B9CA7831F1309564D /* DWBubbleMenuButton.xcconfig */,
-				21EC60B52F6C8966D00AA48D7BFF945D /* DWBubbleMenuButton-dummy.m */,
-				78D36F354AA9B1BEB71D17AE0FD8162A /* DWBubbleMenuButton-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DWBubbleMenuButton";
-			sourceTree = "<group>";
-		};
-		BC709E3D0598086DA66FEB1602A21808 /* AKPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				A881661C9077ED31EF4046945FECBAF7 /* AKPickerView.h */,
-				0C3907D39435DC88D8A1F503097CDD0A /* AKPickerView.m */,
-				C05C6F46F5A089C00973916B0A918AC8 /* Support Files */,
-			);
-			path = AKPickerView;
-			sourceTree = "<group>";
-		};
-		C05C6F46F5A089C00973916B0A918AC8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				067929C1801FE50E1FE6C1A530F35989 /* AKPickerView.xcconfig */,
-				7526FC95498A5A5AA318FD6A90B4299C /* AKPickerView-dummy.m */,
-				D3205033DCFEB3C5872F0991A7B65935 /* AKPickerView-prefix.pch */,
+				54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */,
+				9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */,
+				8A57D320DBE67D1B2EE93A3BD99BE0E1 /* AKPickerView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AKPickerView";
 			sourceTree = "<group>";
 		};
-		C10B100199335C57D2C70D82431D89DF /* Pods */ = {
+		5DB7A55EE94AEA945E5DA1BF71A34EF7 /* AKPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				BC709E3D0598086DA66FEB1602A21808 /* AKPickerView */,
-				4007E2EFB15340E1B57EDE7B94094B35 /* DWBubbleMenuButton */,
+				239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */,
+				23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */,
+				56B0FB7D1C61B76592C8A8B35BB8D86F /* Support Files */,
 			);
-			name = Pods;
+			path = AKPickerView;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E2BF3DC4CCDD3407EB5CB72F2DB71326 /* Pods */,
+				C3B2C72B6DF045F1225A6008F08216F5 /* Products */,
+				091672ECC89FFC3BA2B04BADBFA90B77 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C008B1EE1A227BC7EF9C530546192B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E02D2C91382914B1F07D60EB1239DF9 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C3B2C72B6DF045F1225A6008F08216F5 /* Products */ = {
@@ -202,6 +220,16 @@
 				9831F8F181A9319BC28D3F57CD97215E /* libPods-RosAvtoDengi.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E2BF3DC4CCDD3407EB5CB72F2DB71326 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB7A55EE94AEA945E5DA1BF71A34EF7 /* AKPickerView */,
+				1D0B44E513E5656E98CA215AA6B75B84 /* DWBubbleMenuButton */,
+				1F9136F69F4AAE070075F165BA7A44E9 /* GoogleMaps */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +381,7 @@
 /* Begin XCBuildConfiguration section */
 		2494F60D4622079504FE5E4428060C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 067929C1801FE50E1FE6C1A530F35989 /* AKPickerView.xcconfig */;
+			baseConfigurationReference = 54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AKPickerView/AKPickerView-prefix.pch";
@@ -405,7 +433,7 @@
 		};
 		698CF0C83C17595744329DE349F73E7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 067929C1801FE50E1FE6C1A530F35989 /* AKPickerView.xcconfig */;
+			baseConfigurationReference = 54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AKPickerView/AKPickerView-prefix.pch";
@@ -462,7 +490,7 @@
 		};
 		999D8BC2D01805009ADFAC2397C17B46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A9821A5CD9DB6B9CA7831F1309564D /* DWBubbleMenuButton.xcconfig */;
+			baseConfigurationReference = 7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DWBubbleMenuButton/DWBubbleMenuButton-prefix.pch";
@@ -514,7 +542,7 @@
 		};
 		E1AB94FC7DC8254BB4521AD267722C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A9821A5CD9DB6B9CA7831F1309564D /* DWBubbleMenuButton.xcconfig */;
+			baseConfigurationReference = 7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DWBubbleMenuButton/DWBubbleMenuButton-prefix.pch";
