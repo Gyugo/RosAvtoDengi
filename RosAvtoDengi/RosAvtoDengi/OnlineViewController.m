@@ -7,10 +7,14 @@
 //
 
 #import "OnlineViewController.h"
+#import "CreateFormViewController.h"
+#import "FotoViewController.h"
 
 @interface OnlineViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UIButton *createFormButton;
+@property (weak, nonatomic) IBOutlet UIButton *buttonPTS;
 
 @end
 
@@ -22,6 +26,10 @@
               forControlEvents:UIControlEventTouchUpInside];
     [self.callButton addTarget:self action:@selector(callButtonAction)
               forControlEvents:UIControlEventTouchUpInside];
+    [self.createFormButton addTarget:self action:@selector(createFormButtonAction)
+                    forControlEvents:UIControlEventTouchUpInside];
+    [self.buttonPTS addTarget:self action:@selector(buttonPTSAction)
+             forControlEvents:UIControlEventTouchUpInside];
 
 }
 
@@ -32,13 +40,29 @@
 
 - (void)backButtonAction
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void) callButtonAction
 {
     NSLog(@"Дзынь Дзынь онлайн заявки");
 }
+
+- (void) createFormButtonAction
+{
+    CreateFormViewController * detail = [self.storyboard
+    instantiateViewControllerWithIdentifier:@"createFormViewController"];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
+- (void) buttonPTSAction
+{
+    FotoViewController * detail = [self.storyboard
+    instantiateViewControllerWithIdentifier:@"fotoViewController"];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
+
 
 
 

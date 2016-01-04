@@ -7,10 +7,12 @@
 //
 
 #import "ServicesViewController.h"
+#import "OnlineViewController.h"
 
 @interface ServicesViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UIButton *buttonOnlineView;
 
 @end
 
@@ -23,6 +25,9 @@
               forControlEvents:UIControlEventTouchUpInside];
     [self.callButton addTarget:self action:@selector(callButtonAction)
               forControlEvents:UIControlEventTouchUpInside];
+    [self.buttonOnlineView addTarget:self action:@selector(buttonOnlineViewAction)
+              forControlEvents:UIControlEventTouchUpInside];
+    
 
 }
 
@@ -41,6 +46,12 @@
     NSLog(@"Дзынь Дзынь об услуге");
 }
 
+- (void) buttonOnlineViewAction
+{
+    OnlineViewController * detail = [self.storyboard
+    instantiateViewControllerWithIdentifier:@"onlineViewController"];
+    [self.navigationController pushViewController:detail animated:YES];
+}
 
 
 @end

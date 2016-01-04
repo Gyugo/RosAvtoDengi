@@ -1,5 +1,5 @@
 //
-//  FilialsViewController.h
+//  CreateFormViewController.h
 //  RosAvtoDengi
 //
 //  Created by Viktor on 26.12.15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <GoogleMaps/GoogleMaps.h>
 
-@interface FilialsViewController : UIViewController
+@interface CreateFormViewController : UIViewController
 
 @end
