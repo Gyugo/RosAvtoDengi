@@ -45,7 +45,7 @@
 
 - (void) callButtonAction
 {
-    NSLog(@"Дзынь Дзынь онлайн заявки");
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79885035228"]];
 }
 
 - (void) createFormButtonAction

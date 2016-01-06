@@ -100,7 +100,7 @@
 
 - (void) callButtonAction
 {
-    NSLog(@"Дзынь Дзынь основное меню");
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79885035228"]];
 }
 
 

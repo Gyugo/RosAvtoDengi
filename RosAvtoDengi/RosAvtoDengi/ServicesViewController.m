@@ -43,7 +43,8 @@
 
 - (void) callButtonAction
 {
-    NSLog(@"Дзынь Дзынь об услуге");
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79885035228"]];
+
 }
 
 - (void) buttonOnlineViewAction

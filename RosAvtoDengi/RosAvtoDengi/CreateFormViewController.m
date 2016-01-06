@@ -30,6 +30,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 @property (weak, nonatomic) IBOutlet UITextField *textField8;
 
 @property (strong, nonatomic) IBOutlet UIPickerView *mainPickerView;
+@property (strong, nonatomic) NSString * stringTown;
 
 @property (nonatomic, strong) NSArray * testArray;
 
@@ -220,13 +221,35 @@ numberOfRowsInComponent:(NSInteger)component
     label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15];
     label.text = [NSString stringWithFormat:@" %@", self.testArray[row]];
     label.textAlignment = NSTextAlignmentCenter;
-//    label.layer.borderWidth = 1.f;
-//    label.layer.cornerRadius = 4.f;
     
     [[self.mainPickerView.subviews objectAtIndex:1] setHidden:YES];
     [[self.mainPickerView.subviews objectAtIndex:2] setHidden:YES];
 
     return label;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if (row == 0) {
+        self.stringTown = @"Ставрополь";
+    }
+    else if (row == 1) {
+        
+        self.stringTown = @"Сочи";
+    }
+    else if (row == 2) {
+        self.stringTown = @"Архангельск";
+    }
+    else if (row == 3) {
+        self.stringTown = @"Краснодар";
+    }
+    else
+    {
+        self.stringTown = @"Ошибка ввода";
+    }
+    
+    NSLog(@"%@", self.stringTown);
+    
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component

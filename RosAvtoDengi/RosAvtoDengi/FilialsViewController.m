@@ -25,9 +25,9 @@
     [super viewDidLoad];
     
     self.mainView.layer.cornerRadius = 3.f;
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.610426230566794
-                                                            longitude:39.73967581987381
-                                                                 zoom:15];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:45.03409306485644
+                                                            longitude:39.01480807533264
+                                                                 zoom:19];
     self.mainMap = [GMSMapView mapWithFrame:self.mainView.bounds camera:camera];
     self.mainMap.myLocationEnabled = YES;
     self.mainMap.settings.rotateGestures = NO;
@@ -36,11 +36,32 @@
     [self.mainView addSubview:self.mainMap];
     
     // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381);
-    marker.title = @"Сочи";
-    marker.snippet = @"Макаренко 8/4";
-    marker.map = self.mainMap;
+    GMSMarker *markerSochi = [[GMSMarker alloc] init];
+    markerSochi.position = CLLocationCoordinate2DMake(43.595936839919375, 39.73032295703888);
+    markerSochi.title = @"ул. Горького, д.64";
+    markerSochi.snippet = @"8 (928) 233-04-05 с 9.00 до 20.00\nСб-Вс: с 10.00 до 20.00";
+    markerSochi.map = self.mainMap;
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *markerStavropol = [[GMSMarker alloc] init];
+    markerStavropol.position = CLLocationCoordinate2DMake(45.04995602742864, 41.98354482650757);
+    markerStavropol.title = @"ул. Голенева, д.30/1";
+    markerStavropol.snippet = @"8 (938) 334-87-79 с 9.00 до 20.00\nСб-Вс: с 10.00 до 20.00";
+    markerStavropol.map = self.mainMap;
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *markerKrasnodar = [[GMSMarker alloc] init];
+    markerKrasnodar.position = CLLocationCoordinate2DMake(45.03409306485644, 39.01480807533264);
+    markerKrasnodar.title = @"ул. Северная, д.604А";
+    markerKrasnodar.snippet = @"8 (921) 086-19-84 с 8.00 до 20.00\nСб-Вс: с 10.00 до 20.00";
+    markerKrasnodar.map = self.mainMap;
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *markerArhangelsk = [[GMSMarker alloc] init];
+    markerArhangelsk.position = CLLocationCoordinate2DMake(64.53489978516203, 40.56622266769409);
+    markerArhangelsk.title = @"проспект Обводный канал, 5";
+    markerArhangelsk.snippet = @"8 (928) 037-61-90 с 8.00 до 20.00\nСб-Вс: с 10.00 до 20.00";
+    markerArhangelsk.map = self.mainMap;
     
     self.testArray = [NSArray arrayWithObjects:
                       @"Ставрополь",
@@ -54,7 +75,6 @@
     [self.callButton addTarget:self action:@selector(callButtonAction)
               forControlEvents:UIControlEventTouchUpInside];
     
-    self.mainPickerView.frame = CGRectMake(130, 50, 130, 45);
     [self.mainPickerView selectRow:self.testArray.count - 1 inComponent:0 animated:YES];
 
 }
@@ -71,7 +91,7 @@
 
 - (void) callButtonAction
 {
-    NSLog(@"Дзынь Дзынь филиалы");
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79652767762"]];
 }
 
 - (void) buttonZoomInAction
@@ -126,17 +146,22 @@ numberOfRowsInComponent:(NSInteger)component
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     if (row == 0) {
-        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(-33.868, 151.208)];
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(45.04995602742864, 41.98354482650757)];
+        [self.mainMap animateToZoom:17];
     }
     else if (row == 1) {
         
-        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.610426230566794, 39.73967581987381)];
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(43.595936839919375, 39.73032295703888)];
+        [self.mainMap animateToZoom:17];
     }
     else if (row == 2) {
-
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(64.53489978516203, 40.56622266769409)];
+        [self.mainMap animateToZoom:16];
     }
     else if (row == 3) {
-
+        [self.mainMap animateToLocation:CLLocationCoordinate2DMake(45.03409306485644, 39.01490807533264)];
+//        [self.mainMap animateToViewingAngle:45];
+        [self.mainMap animateToZoom:19];
     }
     else
     {
